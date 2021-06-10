@@ -13,6 +13,21 @@
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="-1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Three image containers (use 25% for four, and 50% for two, etc) */
+		.column {
+  		float: left;
+  		width: 33.33%;
+  		padding: 50px;
+		}
+
+		/* Clear floats after image containers */
+		.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -63,8 +78,8 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! My name's Benjamin Hubner, and you've found my portfolio!</h2>
-								<p>Feel free to look around to find out more about me and what I've done.</p>
+								<h2 class="alt">Benjamin Hubner</h2>
+								<h3>Game Programmer and Software Engineer</h3>
 							</header>
 
 							<!--<footer>
@@ -82,15 +97,23 @@
 							<h2>About Me</h2>
 						</header>
 
-						<a href="#" class="image featured"><img src="images/Ben_Professional_Cropped.jpg" alt="" /></a>
+						<!--	<a href="#" class="image featured"><img src="images/Ben_Professional_Cropped.jpg" alt="" /></a>-->
 
-						<p>So who am I? Well, for starters, I'm a graduating senior game programming major from <a href="https://www.champlain.edu/academics/undergraduate-academics/majors-and-programs/game-programming">Champlain College</a>.
-							I myself am passionate about both computer programming and game development, and game programming turned out to be a great intersection between these two passions. 
-							I'm currently looking for a full-time job as either a game programmer or software engineer. 
-							Over my four years at Champlain College, I have gained a great deal of both computer programming and game development experience, creating many game prototypes for my classes focusing on different sections of the game programming pipeline. 
-							I have also gained experience through an international internship at the Montreal-based company <a href= "http://b2tgame.com">Back To The Game </a>, where I worked as a game programming intern. 
-							Through both these experiences and my classes, I've developed many skills in my field, including the C programming language family, GLSL shader programming, and more. 
-							I also have game development experience in both Unity and Unreal Engine, as well as experience collaborating with others using different version control options like Git and Subversion.
+						<p> Hello! My name is Benjamin Hubner. I'm a game programming graduate from <a href="https://www.champlain.edu/academics/undergraduate-academics/majors-and-programs/game-programming">Champlain College</a>.
+							I graduated <i> Cum Laude </i>in May of 2021 with a Game Programming major and a minor in Mathematics.
+							I am passionate about both computer programming and game development, and game programming turned out to be a great intersection between these two interests. 
+						</p>
+						<p>
+							Over my four years as a student at Champlain College, I have gained a great deal of both computer programming and game development experience, creating many game prototypes focusing on different sections of the game programming pipeline. 
+							I have also gained hands-on experience during an international internship at the Montreal-based company <a href= "http://b2tgame.com"> Back To The Game </a>, where I worked as a game programming intern working on a variety of features for their game <i>City Cleaner</i>. 
+							I have developed many skills in my field over the years, including the C programming language family, GLSL shader programming, networking, artificial intelligence, and <a href="https://github.com/Ryse245">more</a>. 
+						</p>
+						<p>
+							With projects like <i>Live/Wire</i>, my Capstone project for Champlain College, I have game development experience in both Unity and Unreal Engine. 
+							Additionally, many of these projects also granted me experience collaborating with other developers from different fields, both in an interpersonal sense, being able to communicate effectively with others, and a technical sense, using version control options like Git and Subversion.
+						</p>
+						<p>
+							I'm currently looking for a full-time position as either a game programmer or software engineer at a creative, forward-thinking company.
 						</p>
 					</div>
 				</section>
@@ -102,11 +125,11 @@
 							<header>
 								<h2>Portfolio</h2>
 							</header>
-
+							<!--
 							<a href="#" class="image fit"><img src="images/BenAtWork.png" alt="" /></a>
 							<header>
-								<h4>Above is me at my intenship in Montreal!</h4>
-							</header>
+								<h6>Me at my intenship in Montreal</h6>
+							</header>-->
 
 							<p>Now that you know a bit about me, check out some of my projects!</p>
 
@@ -115,9 +138,11 @@
 									
 									<article class="item">
 										<a href="page_Yolk.html" class="image fit"><img src="images/YolkLogo.png" alt="" /></a>
-										<header>
-											<h3>Yolk</h3>
-										</header>
+										<a href="page_Yolk.html">
+											<header>
+												<h3> Yolk </h3>
+											</header>
+										</a>
 									</article>
 									<!--
 									<article class="item">
@@ -130,23 +155,29 @@
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="page_LiveWire.html" class="image fit"><img src="images/LiveWire_main.png" alt="" /></a>
-										<header>
-											<h3>Live/Wire</h3>
-										</header>
+										<a href="page_LiveWire.html">
+											<header>
+												<h3> Live/Wire </h3>
+											</header>
+										</a>
 									</article>
 									<article class="item">
 										<a href="page_AIProject.html" class="image fit"><img src="images/AIFinal.png" alt="" /></a>
-										<header>
-											<h3>AI Final Project</h3>
-										</header>
+										<a href="page_AIProject.html">
+											<header>
+												<h3> AI Final Project </h3>
+											</header>
+										</a>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="page_NetworkingProject.html" class="image fit"><img src="images/NetworkingFinal.png" alt="" /></a>
-										<header>
-											<h3>Networking Final Project</h3>
-										</header>
+										<a href="page_NetworkingProject.html">
+											<header>
+												<h3> Networking Final Project </h3>
+											</header>
+										</a>
 									</article>
 									<!--<article class="item">
 										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
@@ -190,7 +221,17 @@
 								</div>
 							</form>	-->
 
-							<a href="#" class="image featured"><img src="images/Ben_Goofy.jpg" alt="" /></a>
+						</div>
+						<div class="row">
+							<div class="column">
+								<img src="images/Ben_Professional_Square.jpg" alt="Me, but a bit more professional" style="width:100%"/>
+							</div>
+							<div class="column">
+								<img src="images/BenAtWork_Square.png" alt="Me at my internship in Montreal!"style="width:100%" />
+							</div>
+							<div class="column">
+								<img src="images/Ben_Goofy_Square.jpg" alt="Goofy ol' me!" style="width:100%" />
+							</div>
 						</div>
 					</section>
 
